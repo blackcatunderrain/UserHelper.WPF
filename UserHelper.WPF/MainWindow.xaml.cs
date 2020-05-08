@@ -1,21 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.DirectoryServices;
-using System.DirectoryServices.AccountManagement;
 using System.Linq;
 using System.Management;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace UserHelper.WPF
 {
@@ -97,35 +84,8 @@ namespace UserHelper.WPF
 
         private void PasswordEx_Initialized(object sender, System.EventArgs e)
         {
-            string result;
-            try
-            {
-                var adAuth = new PrincipalContext(ContextType.Domain, Environment.UserDomainName);
-                var user = UserPrincipal.FindByIdentity(adAuth, Environment.UserName);
-                result = GetPasswordExpirationDate(user);
-            }
-            catch (Exception ex)
-            {
-                result = "AD offline";
-            }
-
-            PWex.Text = result;
-        }
-
-        private static string GetPasswordExpirationDate(UserPrincipal user)
-        {
-            string result;
-            try
-            {
-                var deUser = (DirectoryEntry)user.GetUnderlyingObject();
-                var nativeDeUser = (ActiveDs.IADsUser)deUser.NativeObject;
-                result = nativeDeUser.PasswordExpirationDate.ToString();
-            }
-            catch(Exception ex)
-            {
-                result = "AD offline";
-            }
-            return result;
+            var result = new AD();
+            PWex.Text = result.GetPasswordExperationDate();
         }
 
         private void NetworkStatus_Initialized(object sender, System.EventArgs e)

@@ -33,10 +33,7 @@ namespace UserHelper.WPF
                     MessageBox.Show("Компьютер будет перезагружен через 10 секунд");
                     proc.Start();
                 }
-                   
-                             
             }
-           
         }
     }
 }

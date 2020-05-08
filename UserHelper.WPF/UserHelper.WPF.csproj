@@ -89,6 +89,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AD.cs" />
     <Compile Include="GetIsNetworkAvailable.cs" />
     <Compile Include="Reboot.cs" />
     <Page Include="MainWindow.xaml">
