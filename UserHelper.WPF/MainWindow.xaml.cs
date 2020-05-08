@@ -84,8 +84,8 @@ namespace UserHelper.WPF
 
         private void PasswordEx_Initialized(object sender, System.EventArgs e)
         {
-            var result = new AD();
-            PWex.Text = result.GetPasswordExperationDate();
+            var adQuery = new AD();
+            PWex.Text = adQuery.GetPasswordExperationDate();
         }
 
         private void NetworkStatus_Initialized(object sender, System.EventArgs e)
