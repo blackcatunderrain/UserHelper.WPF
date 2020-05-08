@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>\\g-w-fs-4\deploy%24\userhelper\|\\g-w-fs-4\deploy%24\|publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

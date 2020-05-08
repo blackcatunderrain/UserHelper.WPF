@@ -1,0 +1,31 @@
+﻿<Window x:Class="UserHelper.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserHelper.WPF"
+        xmlns:r="clr-namespace:System;assembly=mscorlib"
+
+        mc:Ignorable="d"
+        Title="UserHelper" Height="337.83" Width="573.021" Icon="Custom-Icon-Design-Pretty-Office-2-Help-desk.ico" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Topmost="True">
+    <Grid Margin="0,0,2,-3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="GPupdate" Content="GP update" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="117" Height="45" Click="GPupdate_Click" Background="#FFDDDDDD"/>
+        <Button x:Name="RebootPC" Content="Reboot PC" HorizontalAlignment="Left" Margin="151,10,0,0" VerticalAlignment="Top" Width="117" Height="45" Click="RebootPC_Click"/>
+        <TextBlock x:Name="ComputerName" HorizontalAlignment="Left" Margin="310,10,0,0" TextWrapping="Wrap" Text="Computer Name:" VerticalAlignment="Top" />
+        <TextBlock x:Name="MachineName" HorizontalAlignment="Left" Margin="410,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Initialized="MachineName_Initialized" FontWeight="Bold" Width="145"/>
+        <TextBlock HorizontalAlignment="Left" Margin="310,40,0,0" TextWrapping="Wrap" Text="IP Address:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="IPs" HorizontalAlignment="Left" Margin="410,40,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Initialized="IPs_Initialized" FontWeight="Bold"/>
+        <TextBlock x:Name="NDs" HorizontalAlignment="Left" Margin="410,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Initialized="ND_Initialized" RenderTransformOrigin="1.371,0.43" FontWeight="Bold"/>
+        <TextBlock x:Name="LDs" HorizontalAlignment="Left" Margin="410,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Initialized="LD_Initialized" FontWeight="Bold"/>
+        <TextBlock x:Name="PWex" HorizontalAlignment="Left" Margin="410,130,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="21" Width="145" Initialized="PasswordEx_Initialized" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="310,130,0,0" TextWrapping="Wrap" Text="Password expire:" VerticalAlignment="Top" Height="21"/>
+        <TextBlock x:Name="NA" HorizontalAlignment="Left" Margin="410,160,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Initialized="NetworkStatus_Initialized" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="310,160,0,0" TextWrapping="Wrap" Text="Internet available:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="310,100,0,0" TextWrapping="Wrap" Text="Freespace:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="310,70,0,0" TextWrapping="Wrap" Text="Network Drives:" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
